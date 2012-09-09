@@ -12,7 +12,7 @@ class Libreria_test extends Test_case
 	function test_false()
 	{
 		$this->getMock('Libreria')->expects($this->any())
-			->method('muerto')
+			->method('prueba')
 			->will($this->returnValue(FALSE));
 		$this->assertTrue($this->ul->libreria->prueba(), 'No devuelve FALSE.');
 	}
