@@ -14,6 +14,6 @@ class Libreria_test extends Test_case
 		$this->getMock('Libreria')->expects($this->any())
 			->method('prueba')
 			->will($this->returnValue(FALSE));
-		$this->assertTrue($this->ul->libreria->prueba(), 'No devuelve FALSE.');
+		$this->assertTrue(!$this->ul->libreria->prueba(), 'No devuelve FALSE.');
 	}
 }
